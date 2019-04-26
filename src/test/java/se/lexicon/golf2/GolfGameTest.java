@@ -12,10 +12,10 @@ public class GolfGameTest {
 		double Givenangle = 45;
 
 		double expectedposition = 320;
-		double actualposition = (int) (Math.pow(Givenvelocity, 2) / 9.8
-				* Math.sin(2 * ((Math.PI / 180) * (Givenangle))));
+		double actualposition =Calculations.calculation(56, 45);
 
 		Assert.assertEquals(expectedposition, actualposition, 0.1);
 
+		
 	}
 }
